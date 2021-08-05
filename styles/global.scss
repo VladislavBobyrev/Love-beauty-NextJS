@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap");
+//обнуление стилей браузеров
 @import "./utilits/resets";
+// слити компонентов
+@import '../components/hader/header.scss';
 
 html,
 body {

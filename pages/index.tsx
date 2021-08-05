@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import head from 'next/head'
+import React from 'react'
+import { Header } from '../components/hader/header'
 
 
 export default function Home() {
@@ -8,13 +9,11 @@ export default function Home() {
     <>
       <Head>
         <title>Love&Beauty</title>
-        <link key={0} rel="icon" href="/favicon.ico" />
+        <link key={0} rel="icon" href="/header/logoLoveBeauty.png" />
       </Head>
 
-			<header className='header'>
-				hello
-			</header>
-
+			<Header />
+ 
       <main className='main'>
 
       </main>
