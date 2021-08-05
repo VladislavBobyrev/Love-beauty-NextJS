@@ -1,4 +1,28 @@
 header {
 	display: grid;
-	grid-template-columns: auto 1fr auto;
+
+	padding: 30px 40px 24px;
+
+	text-transform: uppercase;
+	grid-template-columns: auto 1fr auto auto auto;
+
+	a {
+		position: relative;
+		min-width: 24px;
+		margin-right: 25px;
+	}
+
+	a:last-child {
+		margin-right: 0;
+	}
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.userName {
+	font-size: 14px;
+	padding-left: 15px;
 }
