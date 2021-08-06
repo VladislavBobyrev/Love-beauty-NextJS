@@ -1,3 +1,4 @@
+import { Main } from '../components/main/main'
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
@@ -13,13 +14,7 @@ export default function Home() {
       </Head>
 
 			<Header />
- 
-      <main className='main'>
-
-      </main>
-
-      <footer className='footer'>
-      </footer>
+			<Main/>
     </>
   )
 }
