@@ -13,7 +13,13 @@ export const Header = ():JSX.Element => {
 			</form >
 			<a href="" className='center ef'><div className="userName">vladislavskiy</div><img src="/header/LK.svg" alt="" /></a>
 			<a href=""  className='center ef'><img src="/header/sell.svg" /></a>
-			<a href=""  className='right center ef'><img src="/header/phone.svg" width='26px' /></a>
+			<a href=""  className='right center ef'><img src="/header/phone.svg" width='26px' />
+			<ul>
+				<li><a href=""><img src="/header/wotsap.svg" alt="" /> 8 900 000 00 00</a></li>
+				<li><a href=""><img src="/header/wotsap.svg" alt="" />whotsap</a></li>
+				<li><a href=""><img src="/header/telegramm.svg" alt="" />telegramm</a></li>
+			</ul>
+			</a>
 
 			<nav >
 				<ul>

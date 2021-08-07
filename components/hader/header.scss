@@ -11,20 +11,61 @@ header {
 
 	a {
 		position: relative;
-
+		padding: 3px 10px;
 		min-width: 24px;
 	}
 
 	a:last-child {
 		margin-right: 0;
 	}
-
+	.right {
+		position: relative;
+		ul {
+			display: none;
+		}
+	}
 	form {
 		button {
 			background-color: $neutral-regular;
 		}
 
 		input:hover::placeholder {
+			color: $text-color;
+		
+		}
+	}
+	// =============== эффект телефона
+	.right:hover ul {
+		padding: 10px;
+		display: grid;
+		grid-template-rows: repeat(3, 1fr);
+		position: absolute;
+		top: 35px;
+		background: $text-color;
+		transform: translateX(-41%);
+		width: 260px;
+		height: 200px;
+		z-index: 1;
+		border-radius: 15px;
+		a {
+			font-size: 18px;
+			color: $default-color;
+			img {
+				height: 30px;
+				padding-right: 15px;
+			}
+		}
+		li {
+			border-radius: 15px;
+			padding: 15px;
+			justify-content: center;
+		}
+	}
+	.right li:hover {
+		transition: 0.3s;
+		background: $neutral-regular;
+
+		a {
 			color: $text-color;
 		}
 	}
@@ -145,12 +186,12 @@ nav {
 }
 
 //========================== @media
-@media (min-width: 768px) {
+//==от768
+@media (min-width: $tableWidth) {
 	// ===========================  эффект ссылок
 
 	.ef {
 		padding: 3px 10px;
-
 		background-color: $default-color;
 	}
 
@@ -194,20 +235,11 @@ nav {
 		opacity: 1;
 	}
 }
-// ===========  0 до 768px
-@media (min-width: 768px) {
-	.burger{
-		display: none;
-	}
 
-}
-@media (max-width: 768px) {
+@media (max-width: $tableWidth) {
 	header {
 		grid-template-columns: repeat(5, 1fr);
 
-		.logo{
-			display: none;
-		}
 		.left {
 			justify-content: start;
 		}
@@ -216,9 +248,13 @@ nav {
 			display: flex;
 			justify-content: flex-end;
 		}
+		.right:hover ul {
+			top: 35px;
+			transform: translateX(0%);
+		}
 		nav ul {
 			display: grid;
-			grid-gap: .9%;
+			grid-gap: 0.9%;
 
 			a {
 				padding: 5px;
@@ -244,10 +280,30 @@ nav {
 		form button,
 		form input {
 			width: auto;
-		
+			border-bottom: none;
 		}
 		.userName {
 			display: none;
+		}
+	}
+}
+@media (min-width: $smTableWidth) {
+	header {
+		.burger {
+			display: none;
+		}
+		}
+}
+@media (max-width: $smTableWidth) {
+	header {
+		.logo {
+			display: none;
+		}
+		nav {
+			display: none;
+		}
+		.right:hover ul {
+			top: 30px;
 		}
 	}
 }
