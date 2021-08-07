@@ -3,16 +3,17 @@ import React from "react"
 export const Header = ():JSX.Element => {
 	return(
 		<header >
-			<a className='center ef' href="https://www.figma.com/file/bR8kVVEBmaECwixS25mRgo/Update_Touch%C3%A9?node-id=817%3A19481"><img src="/header/logoLoveBeauty.png" alt="" width='36px'/>
-				love&Beauty
+			<a className='left  ef' href="https://www.figma.com/file/bR8kVVEBmaECwixS25mRgo/Update_Touch%C3%A9?node-id=817%3A19481"><img className='logo' src="/header/logoLoveBeauty.png" alt="" width='40px'/>
+			<img className='burger' src="/header/burger.svg" alt="" />
+			<span>	love&Beauty</span>
 			</a>
-			<form >
+			<form>
 				<input className='text' type="text" placeholder='поиск'/>
 				<button><img src="/header/search.svg" alt="" /></button>
-			</form>
+			</form >
 			<a href="" className='center ef'><div className="userName">vladislavskiy</div><img src="/header/LK.svg" alt="" /></a>
 			<a href=""  className='center ef'><img src="/header/sell.svg" /></a>
-			<a href=""  className='center ef'><img src="/header/phone.svg" width='26px' /></a>
+			<a href=""  className='right center ef'><img src="/header/phone.svg" width='26px' /></a>
 
 			<nav >
 				<ul>
@@ -68,8 +69,7 @@ export const Header = ():JSX.Element => {
 					<li><a href="">доставка и оплата</a></li>
 					<li><a href="">акции</a></li>
 				</ul>
-		
-		
+			
 		</nav>
 		</header>
 		
