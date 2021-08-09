@@ -11,19 +11,23 @@ header {
 
 	a {
 		position: relative;
-		padding: 3px 10px;
+
 		min-width: 24px;
+		padding: 3px 10px;
 	}
 
 	a:last-child {
 		margin-right: 0;
 	}
+
 	.right {
 		position: relative;
+
 		ul {
 			display: none;
 		}
 	}
+
 	form {
 		button {
 			background-color: $neutral-regular;
@@ -31,38 +35,49 @@ header {
 
 		input:hover::placeholder {
 			color: $text-color;
-		
 		}
 	}
 	// =============== эффект телефона
 	.right:hover ul {
-		padding: 10px;
-		display: grid;
-		grid-template-rows: repeat(3, 1fr);
 		position: absolute;
+		z-index: 1;
 		top: 35px;
-		background: $text-color;
-		transform: translateX(-41%);
+
+		display: grid;
+
 		width: 260px;
 		height: 200px;
-		z-index: 1;
+		padding: 10px;
+
+		transform: translateX(-41%);
+
 		border-radius: 15px;
+		background: $text-color;
+		grid-template-rows: repeat(3, 1fr);
+
 		a {
-			font-size: 18px;
 			color: $default-color;
+
+			font-size: 18px;
+
 			img {
 				height: 30px;
 				padding-right: 15px;
 			}
 		}
+
 		li {
-			border-radius: 15px;
-			padding: 15px;
 			justify-content: center;
+
+			padding: 15px;
+
+			border-radius: 15px;
 		}
 	}
+
 	.right li:hover {
 		transition: 0.3s;
+
 		background: $neutral-regular;
 
 		a {
@@ -192,6 +207,7 @@ nav {
 
 	.ef {
 		padding: 3px 10px;
+
 		background-color: $default-color;
 	}
 
@@ -235,7 +251,7 @@ nav {
 		opacity: 1;
 	}
 }
-
+// ======================  от 0 до 768
 @media (max-width: $tableWidth) {
 	header {
 		grid-template-columns: repeat(5, 1fr);
@@ -248,16 +264,20 @@ nav {
 			display: flex;
 			justify-content: flex-end;
 		}
+
 		.right:hover ul {
 			top: 35px;
+
 			transform: translateX(0%);
 		}
+
 		nav ul {
 			display: grid;
 			grid-gap: 0.9%;
 
 			a {
 				padding: 5px;
+
 				font-size: 13px;
 			}
 
@@ -273,35 +293,73 @@ nav {
 		form {
 			display: flex;
 			justify-content: center;
+			position: relative;
 			input {
 				display: none;
 			}
 		}
+
+		form:hover input {
+			position: absolute;
+			z-index: 1;
+			top: 35px;
+
+			display: grid;
+
+			width: 260px;
+
+			transform: translateX(25%);
+
+			border-radius: 15px;
+			background: $neutral-regular;
+			width: 80vw;
+			padding: 0 0 0 10px;
+			color: $text-color;
+			opacity: 0.95;
+			height: 27px;
+		}
+		form:hover input::placeholder {
+			background: $default-color;
+			position: absolute;
+			top: 5px;
+			width: 90%;
+			//height: 10px;
+		}
+
 		form button,
 		form input {
 			width: auto;
+
 			border-bottom: none;
 		}
+
 		.userName {
 			display: none;
 		}
 	}
 }
+
 @media (min-width: $smTableWidth) {
 	header {
 		.burger {
 			display: none;
 		}
-		}
+	}
 }
+
 @media (max-width: $smTableWidth) {
 	header {
 		.logo {
 			display: none;
 		}
+
+		a {
+			padding: 7px 0;
+		}
 		nav {
 			display: none;
 		}
+
 		.right:hover ul {
 			top: 30px;
 		}
