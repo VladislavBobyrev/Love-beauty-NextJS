@@ -4,18 +4,17 @@ export const Footer = ():JSX.Element => {
 return(
 	<footer>
 	<div className="footer_about">
-		<a  href="https://www.figma.com/file/bR8kVVEBmaECwixS25mRgo/Update_Touch%C3%A9?node-id=817%3A19481">
-			<img  src="/header/logoLoveBeauty.png" alt="лав бьюти love beauty" />
-	  	love&Beauty
+		<a className='a' href="https://www.figma.com/file/bR8kVVEBmaECwixS25mRgo/Update_Touch%C3%A9?node-id=817%3A19481">
+			<img className='footer__logo' src="/header/logo.png" alt="лав бьюти love beauty" />
 		</a>
 	<a href="tel:+79109999999">Телефон 8901 123 45 67
 	<input type="button" value="Позвонить" /></a>
-	<span>Мы на связи ежедневно
+	{/*<span>Мы на связи ежедневно
 с 10:00 до 18:00
 (сб, вс - выходные дни)
 	</span>	
 
-	<span>Адрес 127055, г. Москва,	ул. Красная Плащадь, дом 1, офис призедента</span>
+	<span>Адрес 127055, г. Москва,	ул. Красная Плащадь, дом 1, офис призедента</span>*/}
 	</div>
 	<div className="footer_info">
 		<div>

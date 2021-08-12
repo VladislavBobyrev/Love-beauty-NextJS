@@ -16,7 +16,7 @@ body {
 	#__next{
 		height: 100vh;
 		display: grid;
-		grid-template-rows: auto 1fr minmax(402px, auto);
+		grid-template-rows: auto 1fr auto;
 	}
 	a {
 		color: $text-color;

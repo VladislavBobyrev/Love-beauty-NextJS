@@ -9,6 +9,9 @@ header {
 
 	background: $default-color;
 
+	a:first-child {
+		padding: 0;
+	}
 	a {
 		position: relative;
 
@@ -25,7 +28,7 @@ header {
 
 	.right {
 		position: relative;
-
+z-index: 3;
 		ul {
 			display: none;
 		}

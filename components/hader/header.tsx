@@ -3,7 +3,8 @@ import React from "react"
 export const Header = ():JSX.Element => {
 	return(
 		<header >
-			<a className='left  ef' href="https://www.figma.com/file/bR8kVVEBmaECwixS25mRgo/Update_Touch%C3%A9?node-id=817%3A19481"><img className='logo' src="/header/logoLoveBeauty.png" alt="" width='40px'/>
+			<a className='left  ef' href="https://www.figma.com/file/bR8kVVEBmaECwixS25mRgo/Update_Touch%C3%A9?node-id=817%3A19481">
+				<img className='logo' src="/header/logo.png" alt="" width='40px'/>
 			<img className='burger' src="/header/burger.svg" alt="" />
 			<span>	love&Beauty</span>
 			</a>

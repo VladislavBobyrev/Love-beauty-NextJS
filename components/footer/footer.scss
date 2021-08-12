@@ -4,20 +4,28 @@ footer {
 	grid-template-rows: 1fr auto;
 	background: $text-color;
 	color: $default-color;
-	padding: 60px 20px 30px;
+	padding: 30px 20px 30px;
 
 	.footer_about {
 		display: grid;
 		grid-auto-rows: auto;
 		background: $text-color;
 		padding: 0 10px;
-		span {
-				font-size: 15px;
+		grid-gap: 50px;
+		//span {
+		//	font-size: 15px;
+		//}
+
+		.a {
+			width: 250px;
+			height: 190px;
+			position: relative;
 		}
-		img {
-			width: 70px;
-			border-radius: 15px;
-			margin-right: 10px;
+		.footer__logo {
+			position: absolute;
+			top: -20px;
+			width: 300px;
+			height: 240px;
 		}
 		a {
 			text-transform: uppercase;
@@ -29,7 +37,7 @@ footer {
 				justify-content: center;
 				width: 260px;
 				padding: 5px 10px;
-				margin-top: 30px;
+				margin-top: 10px;
 				background: $text-color;
 				color: $default-color;
 				border: 1px solid $default-color;
@@ -40,40 +48,86 @@ footer {
 				color: $text-color;
 			}
 		}
-		
 	}
 
 	.footer_info {
-		
 		padding: 0 20px;
 		display: grid;
 		grid-gap: 3%;
 		grid-template-columns: 1fr 1fr 1fr;
-		span{
+		span {
 			font-size: 18px;
 			grid-column: 1/4;
 		}
 		div {
 			display: flex;
-			flex-direction: column;		
+			flex-direction: column;
 		}
 		a {
 			padding: 10px 0;
 			color: $default-color;
 			font-size: 15px;
 		}
-		a:hover{
+		a:hover {
 			border-radius: 15px;
-			box-shadow: 0 0  15px 0 $neutral-placeholder;
+			box-shadow: 0 0 15px 0 $neutral-placeholder;
 		}
 	}
 }
 
-.footer_social{
+.footer_social {
 	grid-column: 1/ 3;
 	display: flex;
 	justify-content: center;
-	a{
-	 padding: 0 30px;
+	a {
+		padding: 0 30px;
+	}
+}
+//=================  от 0 до 768px
+@media (max-width: $tableWidth) {
+	footer {
+		display: grid;
+		grid-template-rows: auto auto auto;
+		grid-template-columns: 1fr;
+		.footer_about {
+			display: grid;
+
+			.footer__logo {
+				position: relative;
+			}
+		}
+
+		.footer_info {
+			grid-template-columns: 1fr;
+			grid-auto-rows: auto auto auto;
+
+			a {
+				text-align: center;
+			}
+		}
+
+		.footer_social {
+			padding: 60px 0 0 0;
+			grid-column: 1 /3;
+		}
+	}
+}
+
+//=================  от 0 до 550px
+@media (max-width: 550px) {
+	footer {
+		padding: 0 0 10px;
+		display: flex;
+		flex-direction: column;
+
+		.footer_about {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+
+			a {
+				margin: 0 auto;
+			}
+		}
 	}
 }
