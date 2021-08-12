@@ -2,7 +2,7 @@ header {
 	display: grid;
 	row-gap: 25px;
 
-	padding: 30px 20px 24px;
+	padding: 30px 20px 35px;
 
 	text-transform: uppercase;
 	grid-template-columns: auto 1fr auto auto auto;
@@ -16,6 +16,9 @@ header {
 		padding: 3px 10px;
 	}
 
+ ul, li, 	a{
+		z-index: 2;
+	}
 	a:last-child {
 		margin-right: 0;
 	}

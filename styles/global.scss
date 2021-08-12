@@ -6,12 +6,18 @@
 @import "../components/hader/header.scss";
 @import "../components/banner/banner.scss";
 @import "../components/main/main.scss";
+@import "../components//footer/footer.scss";
 
 html,
 body {
 	font-family: "Raleway", sans-serif;
 	font-weight: 400;
 
+	#__next{
+		height: 100vh;
+		display: grid;
+		grid-template-rows: auto 1fr minmax(402px, auto);
+	}
 	a {
 		color: $text-color;
 	}

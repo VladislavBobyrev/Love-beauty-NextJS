@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import { Header } from '../components/hader/header'
+import { Footer } from '../components/footer/footer'
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
 
 			<Header />
 			<Main/>
+			<Footer/>
     </>
   )
 }

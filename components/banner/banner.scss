@@ -1,14 +1,36 @@
-main ul {
-
-
-	padding: 0 1%;
-
-	border: 10px solid red;
-
-	li{
+main {
+ 
+	.slider {
+		a{
+			width: 100%;
+			height: 100%;
+		}
+		position: relative;
 		width: 100%;
-		margin: 0 auto;
-		border: 10px solid ;
+		height: 100px;
+		margin: auto;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+	}
 
+	.slider-img {
+	
+		z-index: -1;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		transition: all 0.5s;
+
+	}
+
+	.slider-img-prev {
+		transform: translateX(-100%);
+	}
+
+	.slider-img-next {
+
+		transform: translateX(100%);
 	}
 }
