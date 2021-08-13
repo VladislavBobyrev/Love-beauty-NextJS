@@ -19,7 +19,9 @@ header {
 		padding: 3px 10px;
 	}
 
- ul, li, 	a{
+	ul,
+	li,
+	a {
 		z-index: 2;
 	}
 	a:last-child {
@@ -28,7 +30,7 @@ header {
 
 	.right {
 		position: relative;
-z-index: 3;
+		z-index: 3;
 		ul {
 			display: none;
 		}
@@ -196,7 +198,7 @@ nav {
 
 	ul li ul li:hover ul {
 		position: absolute;
-		top: 30px;
+		top: 20px;
 
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(100px, auto));
