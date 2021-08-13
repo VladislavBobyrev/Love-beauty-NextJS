@@ -2,13 +2,17 @@ import React, {useState, useEffect} from "react"
 import Image from "next/dist/client/image"
 
 
-const slide1 = require("../../public/banner/lip.jpg")
-const slide2 = require("../../public/banner/cover.jpg")
+const slide1 = require("../../public/lable/Estel_22.04.2021_1800х420.jpg")
+const slide2 = require("../../public/lable/Hempz_22.04.2021_1800х420.jpg")
+const slide3 = require("../../public/lable/Kerastase_12.04.2021_1800х420.jpg")
+const slide4 = require("../../public/lable/Loreal-Professionnel_12.04.2021_1800х420.jpg")
 
 
 const img = [ 
 		<Image src={slide2} alt="Picture of the author" />,
-		<Image src={slide2} alt="Picture of the author" />
+		<Image src={slide2} alt="Picture of the author" />,
+		<Image src={slide3} alt="Picture of the author" />,
+		<Image src={slide4} alt="Picture of the author" />,
 ]
 
 export const Banner = ():JSX.Element => {
