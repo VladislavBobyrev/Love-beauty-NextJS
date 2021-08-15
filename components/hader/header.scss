@@ -7,8 +7,7 @@ header {
 	text-transform: uppercase;
 	grid-template-columns: auto 1fr auto auto auto;
 
-	background: $default-color;
-
+	//background: $default-color;
 
 	a {
 		position: relative;
@@ -22,6 +21,7 @@ header {
 	a {
 		z-index: 2;
 	}
+
 	a:last-child {
 		margin-right: 0;
 	}
@@ -29,6 +29,7 @@ header {
 	.right {
 		position: relative;
 		z-index: 3;
+
 		ul {
 			display: none;
 		}
@@ -214,7 +215,7 @@ nav {
 	.ef {
 		padding: 3px 10px;
 
-		background-color: $default-color;
+		//background-color: $default-color;
 	}
 
 	.ef :hover {
@@ -297,9 +298,11 @@ nav {
 		}
 
 		form {
+			position: relative;
+
 			display: flex;
 			justify-content: center;
-			position: relative;
+
 			input {
 				display: none;
 			}
@@ -313,22 +316,26 @@ nav {
 			display: grid;
 
 			width: 260px;
+			width: 80vw;
+			height: 27px;
+			padding: 0 0 0 10px;
 
 			transform: translateX(25%);
 
+			opacity: 0.95;
+			color: $text-color;
+
 			border-radius: 15px;
 			background: $neutral-regular;
-			width: 80vw;
-			padding: 0 0 0 10px;
-			color: $text-color;
-			opacity: 0.95;
-			height: 27px;
 		}
+
 		form:hover input::placeholder {
-			background: $default-color;
 			position: absolute;
 			top: 5px;
+
 			width: 90%;
+
+			background: $default-color;
 			//height: 10px;
 		}
 
@@ -362,6 +369,7 @@ nav {
 		a {
 			padding: 7px 0;
 		}
+
 		nav {
 			display: none;
 		}

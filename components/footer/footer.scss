@@ -1,73 +1,93 @@
 footer {
 	display: grid;
+
+	padding: 30px 20px 30px;
+
+	color: $default-color;
+	background: $text-color;
 	grid-template-columns: 1fr 2fr;
 	grid-template-rows: 1fr auto;
-	background: $text-color;
-	color: $default-color;
-	padding: 30px 20px 30px;
 
 	.footer_about {
 		display: grid;
-		grid-auto-rows: auto;
-		background: $text-color;
+
 		padding: 0 10px;
+
+		background: $text-color;
+		grid-auto-rows: auto;
 		grid-gap: 50px;
 		//span {
 		//	font-size: 15px;
 		//}
 
 		.a {
+			position: relative;
+
 			width: 250px;
 			height: 190px;
-			position: relative;
 		}
+
 		.footer__logo {
 			position: absolute;
 			top: -20px;
+
 			width: 300px;
 			height: 240px;
 		}
+
 		a {
 			text-transform: uppercase;
-			font-size: 22px;
 
 			color: $default-color;
 
+			font-size: 22px;
+
 			input {
 				justify-content: center;
+
 				width: 260px;
-				padding: 5px 10px;
 				margin-top: 10px;
-				background: $text-color;
+				padding: 5px 10px;
+
 				color: $default-color;
 				border: 1px solid $default-color;
+				background: $text-color;
 			}
+
 			input:hover {
 				cursor: pointer;
-				background: $neutral-regular;
+
 				color: $text-color;
+				background: $neutral-regular;
 			}
 		}
 	}
 
 	.footer_info {
-		padding: 0 20px;
 		display: grid;
+
+		padding: 0 20px;
 		grid-gap: 3%;
 		grid-template-columns: 1fr 1fr 1fr;
+
 		span {
 			font-size: 18px;
 			grid-column: 1/4;
 		}
+
 		div {
 			display: flex;
 			flex-direction: column;
 		}
+
 		a {
 			padding: 10px 0;
+
 			color: $default-color;
+
 			font-size: 15px;
 		}
+
 		a:hover {
 			border-radius: 15px;
 			box-shadow: 0 0 15px 0 $neutral-placeholder;
@@ -77,8 +97,10 @@ footer {
 
 .footer_social {
 	grid-column: 1/ 3;
+
 	display: flex;
 	justify-content: center;
+
 	a {
 		padding: 0 30px;
 	}
@@ -89,6 +111,7 @@ footer {
 		display: grid;
 		grid-template-rows: auto auto auto;
 		grid-template-columns: 1fr;
+
 		.footer_about {
 			display: grid;
 
@@ -116,17 +139,21 @@ footer {
 //=================  от 0 до 550px
 @media (max-width: 550px) {
 	footer {
-		padding: 0 0 10px;
 		display: flex;
 		flex-direction: column;
+
+		padding: 0 0 10px;
 
 		.footer_about {
 			display: flex;
 			flex-direction: column;
+
 			text-align: center;
 
 			a {
 				margin: 0 auto;
+
+				font-size: 23px;
 			}
 		}
 	}

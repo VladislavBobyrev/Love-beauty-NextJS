@@ -1,3 +1,10 @@
-.category{
-	background: $default-color;
+.category {
+	background: $neutral-primary;
+
+	.gallery__items {
+		display: grid;
+		grid-gap: 0.3%;
+		gap: 0.3%;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
 }
