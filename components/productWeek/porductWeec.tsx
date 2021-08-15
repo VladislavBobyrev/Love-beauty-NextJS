@@ -10,42 +10,48 @@ export const ProductWeek = ():JSX.Element => {
 								<div className="gallery__item">
 								<img src="/lable/Hempz_22.04.2021_275х275.jpg" alt=""/>
 								</div>
-								<form>									
-										<input type="button" value='-'/>
+								<form>
+								<div className='prise'>									
+										<input className='input__min' type="button" value='-'/>
 										<input className='input__text' type='text' value='1'/>
-										<input type="button" value='+'/>
-										<div>11304 P</div>									
+										<input className='input__pl' type="button" value='+'/>
+										<h1>11304 P</h1>
+								</div>									
 										<button className='buy'>в корзину</button>
 								
 								</form>								
 							</div>
 							<div>
 								<div className="gallery__item">
-								<img src="/lable/Loreal-Professionnel_12.04.2021_275х275.png" alt=""/>
+								<img src="/lable/Hempz_22.04.2021_275х275.jpg" alt=""/>
 								</div>
 								<form>
-																
-										<input type="button" value='-'/>
+								<div className='prise'>									
+										<input className='input__min' type="button" value='-'/>
 										<input className='input__text' type='text' value='1'/>
-										<input type="button" value='+'/>
-									
-										<div>11304 P</div>									
+										<input className='input__pl' type="button" value='+'/>
+										<h1>11304 P</h1>
+								</div>									
+										<button className='buy'>в корзину</button>
 								
-								<button className='buy'>в корзину</button>
 								</form>								
 							</div>
 							<div>
 								<div className="gallery__item">
-								<img src="/lable/Kerastase_12.04.2021_275х275.jpg" alt=""/>
+								<img src="/lable/Hempz_22.04.2021_275х275.jpg" alt=""/>
 								</div>
-								<form>									
-										<input type="button" value='-'/>
+								<form>
+								<div className='prise'>									
+										<input className='input__min' type="button" value='-'/>
 										<input className='input__text' type='text' value='1'/>
-										<input type="button" value='+'/>
-										<div> 11304 P</div>									
+										<input className='input__pl' type="button" value='+'/>
+										<h1>11304 P</h1>
+								</div>									
 										<button className='buy'>в корзину</button>
+								
 								</form>								
 							</div>
+							
 						</div>
 			</section>
 	)

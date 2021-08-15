@@ -62,38 +62,44 @@ export const News = () => {
        {step===1&&<div className='img-box' 
       >
         	 <img src="/lable/SCHWARZKOPF_22.04.2021_768х393.jpg" alt=""/> 
-					 <form>									
-										<input type="button" value='-'/>
+					 <form>
+								<div className='prise'>									
+										<input className='input__min' type="button" value='-'/>
 										<input className='input__text' type='text' value='1'/>
-										<input type="button" value='+'/>
-										<div>11304 P</div>									
+										<input className='input__pl' type="button" value='+'/>
+										<h1>11304 P</h1>
+								</div>									
 										<button className='buy'>в корзину</button>
-							
-						</form>	
+								
+								</form>	
          </div>}
 
        {step===2&&<div className='img-box'>
 						 <img src="/lable/OLLIN_12.04.2021_768х393.jpg" alt=""/>       
-						 <form>									
-										<input type="button" value='-'/>
+						 <form>
+								<div className='prise'>									
+										<input className='input__min' type="button" value='-'/>
 										<input className='input__text' type='text' value='1'/>
-										<input type="button" value='+'/>
-										<div>11304 P</div>									
+										<input className='input__pl' type="button" value='+'/>
+										<h1>11304 P</h1>
+								</div>									
 										<button className='buy'>в корзину</button>
-							
+								
 								</form>			
        </div>}
 
        {step===3&&<div className='img-box' >
 			 <img src="/lable/Redken_08.04.2021_768х393.jpg" alt=""/>       
-			 <form>									
-										<input type="button" value='-'/>
+			 <form>
+								<div className='prise'>									
+										<input className='input__min' type="button" value='-'/>
 										<input className='input__text' type='text' value='1'/>
-										<input type="button" value='-+'/>
-										<div> 11304 P</div>									
+										<input className='input__pl' type="button" value='+'/>
+										<h1>11304 P</h1>
+								</div>									
 										<button className='buy'>в корзину</button>
-						
-								</form>			
+								
+								</form>		
        </div>}
 
         <div className='right-arrow' onClick={handleRightArrow}>

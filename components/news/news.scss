@@ -6,9 +6,12 @@ div.wrapper {
 
 	width: 100%;
 	height: 100%;
+	padding-top: 30px;
+
+	background: $neutral-regular;
 
 	h1 {
-		padding: 40px 0 50px 0;
+		//padding: 40px 0 50px 0;
 
 		text-transform: uppercase;
 
@@ -36,8 +39,8 @@ div.wrapper .contents {
 	align-items: center;
 	justify-content: center;
 
-	width: 50px;
-	height: 40px;
+	//width: 60px;
+	height: 90px;
 	margin: 20px;
 
 	cursor: pointer;
@@ -49,34 +52,64 @@ div.wrapper .contents {
 	font-size: $FontSizeBig;
 }
 
+.left-arrow:hover,
+.right-arrow:hover {
+	color: $text-color;
+	background-color: $neutral-regular;
+
+	font-size: $FontSizeBig;
+}
+
 .img-box {
 	form {
 		display: grid;
 
 		padding: 0;
 
-		color: $mainFontColor;
+		color: $default-color;
 
 		font-size: $FontSizeCenter;
-		grid-template-columns: 1fr 1fr 1fr 10fr;
+
+		.prise {
+			display: grid;
+
+			padding: 5px;
+
+			background: #000;
+			grid-column: 1/ 5;
+			grid-template-columns: 2fr 0.2fr 1fr 0.2fr 2fr;
+
+			.input__min {
+				grid-column: 2;
+			}
+		}
 		//grid-template-rows: 40px 50px;
 		input {
+			height: 50%;
+			//padding: 10px;
 			border: none;
 
-			font-size: $FontSizeCenter;
+			font-size: $mainFontSize;
+		}
+
+		.input__text {
+			border: 1px solid black;
 		}
 
 		div {
+			position: relative;
+
 			display: grid;
 			align-items: center;
 
 			width: 100%;
-			height: 30px;
+			height: 50px;
 			padding-right: 20px;
 
 			text-align: end;
 
 			background: $default-color;
+			//color: $default-color;
 		}
 	}
 
@@ -113,7 +146,7 @@ div.wrapper .contents {
 	justify-content: center;
 
 	width: 100%;
-	padding: 1% 1% 1%  2%;
+	padding: 1% 1% 1% 2%;
 
 	text-align: center;
 }

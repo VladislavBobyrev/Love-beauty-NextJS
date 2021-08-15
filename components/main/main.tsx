@@ -1,6 +1,7 @@
 import React from "react"
 import { Category } from "../categoru/categoru"
 import { News } from "../news/news"
+import PopularSlider from "../popularSlider/pooular"
 
 import { Preview } from "../preview/preview"
 
@@ -18,6 +19,7 @@ export const Main = ():JSX.Element => {
 			<Preview/>
 			<Category/>
       <News/>
+			<PopularSlider/>
 		</main>
 	)
 }
