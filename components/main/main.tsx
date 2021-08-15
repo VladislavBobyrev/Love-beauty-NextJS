@@ -17,7 +17,6 @@ export const Main = ():JSX.Element => {
 			<Preview/>
 			<Category/>
       <Slider/>
-
 		</main>
 	)
 }
