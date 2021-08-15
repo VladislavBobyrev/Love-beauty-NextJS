@@ -16,9 +16,7 @@ footer {
 		background: $text-color;
 		grid-auto-rows: auto;
 		grid-gap: 50px;
-		//span {
-		//	font-size: 15px;
-		//}
+
 
 		.a {
 			position: relative;
@@ -40,7 +38,7 @@ footer {
 
 			color: $default-color;
 
-			font-size: 22px;
+			font-size: $FontSizeCenter;
 
 			input {
 				justify-content: center;
@@ -153,7 +151,7 @@ footer {
 			a {
 				margin: 0 auto;
 
-				font-size: 23px;
+				font-size: $FontSizeCenter;
 			}
 		}
 	}
