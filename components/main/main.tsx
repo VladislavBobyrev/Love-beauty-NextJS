@@ -4,6 +4,7 @@ import { News } from "../news/news"
 import PopularSlider from "../popularSlider/pooular"
 
 import { Preview } from "../preview/preview"
+import { Subsceibe } from "../subscribe/subscribe"
 
 
 const img = [
@@ -20,6 +21,7 @@ export const Main = ():JSX.Element => {
 			<Category/>
       <News/>
 			<PopularSlider/>
+			<Subsceibe/>
 		</main>
 	)
 }

@@ -1,0 +1,33 @@
+.subscribe {
+	background: $text-color;
+	padding-bottom: 30px;
+	text-align: center;
+	h1{
+		color: $default-color;
+	}
+	h1,
+	button {
+		text-transform: uppercase;
+	}
+
+	form {
+		display: flex;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 5%;
+		input,
+		button {
+			background: $text-color;
+			height: 40px;
+			color: $default-color;
+			text-transform: uppercase;
+		}
+
+		input::placeholder {
+			font-size: $mainFontSize;
+			color: $neutral-primary;
+		}
+		button{
+			border: 1px solid;
+		}
+	}
+}
