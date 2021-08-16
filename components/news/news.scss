@@ -15,7 +15,7 @@ div.wrapper {
 
 		text-transform: uppercase;
 
-		font-size: $FontSizeBig;
+		font-size: $FontSizeCenter;
 	}
 
 	.input__text {
@@ -55,7 +55,7 @@ div.wrapper .contents {
 .left-arrow:hover,
 .right-arrow:hover {
 	color: $text-color;
-	background-color: $neutral-regular;
+	background-color: $default-color;
 
 	font-size: $FontSizeBig;
 }
@@ -68,7 +68,7 @@ div.wrapper .contents {
 
 		color: $default-color;
 
-		font-size: $FontSizeCenter;
+		//font-size: $FontSizeCenter;
 
 		.prise {
 			display: grid;
@@ -77,7 +77,7 @@ div.wrapper .contents {
 
 			background: #000;
 			grid-column: 1/ 5;
-			grid-template-columns: 2fr 0.2fr 1fr 0.2fr 2fr;
+			grid-template-columns: 1.8fr 0.2fr .5fr 0.2fr 2.2fr;
 
 			.input__min {
 				grid-column: 2;
@@ -122,7 +122,7 @@ div.wrapper .contents {
 
 		color: $default-color;
 		border-radius: 15px;
-		background: $border-strong;
+		background: $text-color;
 
 		font-size: $mainFontSize;
 		grid-column: 1/5;
@@ -130,7 +130,8 @@ div.wrapper .contents {
 
 	button:hover {
 		color: $text-color;
-		background: $success-color;
+		background: $neutral-regular;
+;
 	}
 }
 

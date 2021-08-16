@@ -4,20 +4,18 @@
 	align-items: center;
 
 	//box-sizing: border-box;
-
+	
 	margin: 0 auto;
 	margin-bottom: 30px;
 
-	.slider-img {
+	.slider-img1 {
 		z-index: -1;
-
+		display: flex;
+		justify-content: center;
 		width: 30vw;
-		height: 100%;
+		//height: 100%;
+		
 
-		transition: all 0.5s;
-		//img{
-		//	//transform: translateX(-50%);
-		//	}
 	}
 
 	.slider-img-prev {
@@ -28,7 +26,7 @@
 
 	.slider-img-next {
 		position: absolute;
-		//top: 0;
+
 		transition: 0;
 		transform: translateX(100%);
 	}
@@ -40,5 +38,5 @@
 	text-align: center;
 	text-transform: uppercase;
 
-	font-size: $FontSizeBig;
+	font-size: $FontSizeCenter;
 }

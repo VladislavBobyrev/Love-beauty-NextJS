@@ -38,20 +38,20 @@ const img = [
 			 <div  className="Popularslider">
 				 
 			 <a href="">
-		       <div className="slider-img slider-img-prev"
+		       <div className="slider-img1 slider-img-prev"
                 key={prevImgIndex}>
           {img[prevImgIndex]}
         </div>
        
 		
 								
-        <div className="slider-img slider-img-next"
+        <div className="slider-img1 slider-img-next"
                 key={nextImgIndex}>
             {img[nextImgIndex]}
         </div>
       
 
-				<div className="slider-img"
+				<div className="slider-img1"
                 key={activeIndex}>
             {img[activeIndex]}
         </div>

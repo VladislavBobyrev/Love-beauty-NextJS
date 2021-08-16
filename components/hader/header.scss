@@ -38,10 +38,19 @@ header {
 	form {
 		button {
 			background-color: $neutral-regular;
+			height: 30px;
+			border-bottom-right-radius: 5px;
 		}
 
 		input:hover::placeholder {
 			color: $text-color;
+			
+		}
+		input {
+			
+			border-top-left-radius: 5px;
+			background: $border-light;
+			height: 30px;
 		}
 	}
 	// =============== эффект телефона
@@ -342,7 +351,7 @@ nav {
 		form button,
 		form input {
 			width: auto;
-
+			border-radius: 5px;
 			border-bottom: none;
 		}
 
