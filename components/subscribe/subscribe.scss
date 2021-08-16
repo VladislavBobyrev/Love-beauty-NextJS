@@ -2,8 +2,10 @@
 	background: $text-color;
 	padding-bottom: 30px;
 	text-align: center;
-	h1{
+
+	h1 {
 		color: $default-color;
+		padding: 30px;
 	}
 	h1,
 	button {
@@ -11,9 +13,10 @@
 	}
 
 	form {
-		display: flex;
-		grid-template-columns: 1fr 1fr;
+		display: grid;
+		grid-template-columns: 1fr minmax(auto, 280px) minmax(auto, 280px) 1fr;
 		grid-gap: 5%;
+
 		input,
 		button {
 			background: $text-color;
@@ -26,8 +29,25 @@
 			font-size: $mainFontSize;
 			color: $neutral-primary;
 		}
-		button{
+		input {
+			grid-column: 2;
+		}
+		button {
 			border: 1px solid;
+		}
+	}
+
+	@media (max-width: 640px) {
+		form {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr;
+			input {
+				grid-column: 1;
+				margin-bottom: 15px;
+			}
+			button{
+				grid-row: 2;
+			}
 		}
 	}
 }
