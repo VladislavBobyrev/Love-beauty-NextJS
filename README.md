@@ -1,5 +1,5 @@
 <h1  align="center">Описание </h1> 
- <p align="center">Учебное приложение написаное на Next.js </p>
+<!--  <p align="center">Учебное приложение написаное на Next.js </p> -->
 
 <h1  align="center">Love&Beauty</h1>
 
@@ -10,7 +10,7 @@
 </div>
 <h3  align="center">Общие сведения</h3> 
 <p align="center">
-Рaзмер макета 1920px, CSS  stylys Component stylelint
+Рaзмер макета 1640px, CSS  stylys Component stylelint
 <h4 align="center">Использовались для создания сайта </h4>
  
 <!-- - c использованием  canvas -->
