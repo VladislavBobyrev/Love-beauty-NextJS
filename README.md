@@ -1,11 +1,11 @@
 <h1  align="center">Описание </h1> 
  <p align="center">Учебное приложение написаное на Next.js </p>
 
-<h1  align="center">NEXT.JS-TODO</h1>
+<h1  align="center">Love&Beauty</h1>
 
 <div align="center">
   
-<!-- ![Lax 2.0 Gif](https://github.com/VladislavBobyrev/React/blob/main/animation.gif) -->
+![Lax 2.0 Gif](https://github.com/VladislavBobyrev/Love-beauty-NextJS/blob/main/wnV1TXgNqf.gif)
   
 </div>
 <h3  align="center">Общие сведения</h3> 
